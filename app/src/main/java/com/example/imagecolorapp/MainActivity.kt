@@ -13,6 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.view.Menu
+import androidx.navigation.NavController
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,6 +43,8 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
